@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <bar-custom></bar-custom>
+    </header>
+
+    <div class="wrapper">
+      <div class="container ">
+        <h2 class="container-header text-center">Tambahkan Catatan</h2>
+        <form class="form" action="#" id="addNotes">
+          <input-note></input-note>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <section id="note" class="note">
+
+          <div id="searchBarContainer" class="search-bar-container">
+            <div class="floating-form">
+              <form id="searchForm" class="search-form">
+                <div class="form-group">
+                  <label for="name">Cari Catatan Kamu</label>
+                  <input id="name" name="name" type="search" required />
+                </div>
+                <button>Cari</button>
+              </form>
+            </div>
+          </div>
+
+          <div id="noteListContainer" class="grid-container">
+            <div id="notelist" class="note-list">
+              <div class="listnote" id="noteItem"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+      <footer>
+        <footer-custom></footer-custom>
+      </footer>
+    </main>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
